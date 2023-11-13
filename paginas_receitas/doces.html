@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="UTF-8">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css"/>
-    <link rel="stylesheet" href="../media-query.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../media-query.css" />
 
     <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <title>Minhas Receitas</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!--********************Header*********************************-->
     <header>
-        <h1>Minhas Receitas</h1>      
-           <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-           
-           <menu id="itens">
-            <ul>
-                <li><a href="../index.html" class="a_menu">Início</a></li>
-                <li><a  href="./refeicoes.html" class="a_menu">Refeições</a></li>
-                <li><a  href="./bolos.html" class="a_menu">Bolos</a></li>
-                <li><a href="./doces.html" class="a_menu">Doces</a></li>
-                <li><a href="./sopas.html" class="a_menu">Sopas</a></li>  
-            </ul>
-        </menu>
+      <h1>Minhas Receitas</h1>
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+      <menu id="itens">
+        <ul>
+          <li><a href="../index.html" class="a_menu">Início</a></li>
+          <li><a href="./refeicoes.html" class="a_menu">Refeições</a></li>
+          <li><a href="./bolos.html" class="a_menu">Bolos</a></li>
+          <li><a href="./doces.html" class="a_menu">Doces</a></li>
+          <li><a href="./sopas.html" class="a_menu">Sopas</a></li>
+          <li><a href="./salgados.html" class="a_menu">Lanches/Salgados</a></li>
+        </ul>
+      </menu>
     </header>
 
     <!--**************************RECEITAS***********************-->
 
     <section class="receitas">
-        <div class="div_receitas"></div>
-        <h2 class="titulo-receitas" ></h2>
-    <div>
-       
-    </div>
-    <hr/>
-</section>
+      <div class="div_receitas"></div>
+      <h2 class="titulo-receitas"></h2>
+      <div></div>
+      <hr />
+    </section>
 
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
 
-</main>
-</body>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>

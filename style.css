@@ -36,7 +36,7 @@ i#burguer:hover {
 }
 
 menu {
-  display: flex;
+  display: block;
   padding: 5px;
   width: 100%;
   cursor: pointer;
@@ -52,12 +52,12 @@ menu > ul {
 }
 
 menu > ul > li > a {
-  display: flex;
+  display: block;
   padding: 10px;
   text-decoration: none;
   border-top: 2px solid gray;
   color: white;
-  align-items: center;
+  text-align: center;
 }
 
 menu > ul > li > a:hover {
