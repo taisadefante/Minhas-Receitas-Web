@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
     <link rel="stylesheet" href="./resposivo.css">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./media-query.css" />
 
 
     <title>Minhas Receitas</title>
     
 </head>
-<body>
-    <main></main>
-    <!--********************Header*********************************-->
-    <header>
-        <div class="nametopo">
-            <h2 class="nametopo">Minhas Receitas</h2>
-        </div>
-        <div class="menu">
-            <nav class="nav-list">
-                <a href="./index.html" class="a_menu">Início</a>
 
-                <a  href="./paginas_receitas/refeicoes.html" class="a_menu">Refeições</a>
-                <a  href="./paginas_receitas/bolos.html" class="a_menu">Bolos</a>
-                <a href="./paginas_receitas/doces.html" class="a_menu">Doces</a>
-                <a href="./paginas_receitas/sopas.html" class="a_menu">Sopas</a>     
-                <a href="./paginas_receitas/salgados.html" class="a_menu">Lanches/Salgados</a>           
-          </nav>
-        </div>
+<body onresize="mudouTamanho()">
+    <!--********************Header*********************************-->
+    
+    <header>
+        <h1>Minhas Receitas</h1>      
+           <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+           
+        <menu id="itens">
+            <ul>
+            <li><a href="./index.html" class="a_menu">Início</a></li>
+            <li><a  href="./paginas_receitas/refeicoes.html" class="a_menu">Refeições</a></li>
+            <li><a  href="./paginas_receitas/bolos.html" class="a_menu">Bolos</a>
+            <li><a href="./paginas_receitas/doces.html" class="a_menu">Doces</a></li>
+            <li><a href="./paginas_receitas/sopas.html" class="a_menu">Sopas</a></li>  
+            <li><a href="./paginas_receitas/salgados.html" class="a_menu">Lanches/Salgados</a>  </li>  
+            </ul>      
+        </menu>
     </header>
 
 <section>
@@ -38,5 +43,25 @@
 
 
 </main>
+
+<footer>Copyright © 2023 Tais Defante . Todos os direitos reservados.</footer>
+
+<script >
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+      
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+</script>
 </body>
-</html>
+<html>

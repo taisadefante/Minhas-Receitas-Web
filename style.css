@@ -13,38 +13,67 @@ main {
 
 /* ****************Header*****************/
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  position: relative;
-  top: 0;
-  z-index: 999;
-  background-color: #98e398;
-  max-width: 100vw;
-  width: 100%;
+  background-color: gray;
 }
 
-.nav-list {
+header > h1 {
+  padding: 5px;
+  text-align: center;
+}
+
+i#burguer {
+  background-color: gray;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+i#burguer:hover {
+  background-color: white;
+  color: black;
+}
+
+menu {
+  display: flex;
+  padding: 5px;
+  width: 100%;
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: #000000;
   font-size: 18px;
-  right: 15px;
   text-align: center;
-  padding: 0;
-  left: 10px;
 }
 
-.nav-list a {
-  color: #000000;
-  right: 15px;
-  padding: 5px;
+menu > ul {
+  list-style-type: none;
+  justify-content: center;
 }
 
-.nav-list a:hover {
-  background-color: rgb(182, 238, 182);
+menu > ul > li > a {
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  border-top: 2px solid gray;
+  color: white;
+  align-items: center;
+}
+
+menu > ul > li > a:hover {
+  background-color: rgb(109, 107, 111);
+  border-radius: 10px;
+  align-items: center;
+  color: black;
+}
+
+main {
+  width: 90vw;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .img-home {
@@ -94,4 +123,13 @@ li {
   left: 35%;
   height: 5%;
   border-radius: 5%;
+}
+
+footer {
+  box-shadow: 0px -1px 0px 0px #000000;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background-color: gray;
+  font-size: 10px;
 }

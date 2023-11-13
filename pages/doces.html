@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../resposivo.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Minhas Receitas</title>
+  </head>
+
+  <body>
+    >
+    <!--********************Header*********************************-->
+    <header>
+      <div class="nametopo">
+        <h2 class="logo">Minhas Receitas</h2>
+      </div>
+
+      <div class="menu" id="itens">
+        <nav class="nav-list">
+          <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+          <a href="../index.html" class="a_menu">Início</a>
+          <a href="./refeicoes.html" class="a_menu">Refeições</a>
+          <a href="./bolos.html" class="a_menu">Bolos</a>
+          <a href="./doces.html" class="a_menu">Doces</a>
+          <a href="./sopas.html" class="a_menu">Sopas</a>
+          <a href="./salgados.html" class="a_menu">Lanches/Salgados</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--**************************RECEITAS***********************-->
+    <main>
+      <section class="receitas">
+        <div class="div_receitas"></div>
+        <h2 class="titulo-receitas"></h2>
+        <div></div>
+        <hr />
+      </section>
+    </main>
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
